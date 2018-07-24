@@ -1,0 +1,67 @@
+/*---------------- Left Layout Login CSS---------- */
+  .login-layout .left-layout{
+  background-color: #56CCB1;
+  background-image: url("/assets/bg-medly.png");
+  width: 50%;
+  height: 100vh;
+  float: left;
+}
+.login-layout .left-layout .get-out{
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 50%;
+}
+.login-layout .left-layout .get-out .leftmid{
+  display: table-cell;
+  vertical-align: middle;
+}
+.login-layout .left-layout .get-out .inner{
+  display: table;
+  margin: 0 auto;
+}
+.cicle{
+  height: 120px;
+}
+.medly{
+  height: 28px;
+}
+.info{
+  text-align: center;
+  color: white;
+}
+.login-layout .copy-right-text{
+  text-align: center;
+  color: white;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+
+/*---------------- right Layout Login CSS---------- */
+.login-layout .login-form{
+  float: right;
+  width: 50%;
+  height: 100vh;
+  background-color: rgb(0, 255, 195);
+}
+.login-layout .login-form .get-out {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+}
+
+.login-layout .login-form .get-out .rightmid {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+.login-layout .copy-right{
+  position: absolute;
+  bottom: 50px;
+  width: 50%;
+  float: left;
+  color: white;
+}
