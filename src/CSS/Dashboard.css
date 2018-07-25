@@ -1,0 +1,116 @@
+.dashboard-layout .control{
+    background-color: #56CCB1;
+    width: 15%;
+    height: 100vh;
+    float: left;
+}
+.dashboard-layout .control .profile{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 13vh;
+    display: flex;
+}
+
+.dashboard-layout .control .profile .profile-icon{
+    width: 33%;
+    height: 13vh;
+    padding-top: 25px;
+    padding-left: 8px;
+}
+.dashboard-layout .control .profile .profile-icon .iconMedly .icon{
+    width: 50px;
+    height: 50px;
+}
+
+
+.dashboard-layout .control .profile .user-info{
+    width: 77%;
+    height: 13vh;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.dashboard-layout .control .profile .user-info .user-name-content{
+    font-weight: bold;
+    font-family: serif;
+    font-size: 15px;
+    line-height: 15%;
+}
+
+.dashboard-layout .control .profile .user-info .mail .mail-content{
+    font-size: 10px;
+    line-height: 10%;
+}
+.dashboard-layout .control .profile .user-info .role .role-content{
+    font-size: 10px;
+    line-height: 10%;
+}
+
+/*------------------------------------------ */
+.dashboard-layout .dashboard-content{
+    background-color: rgb(204, 86, 135);
+    width: 85%;
+    height: 100vh;
+    float: right;
+}
+
+.dashboard-layout .dashboard-content .dashboard-support{
+    background-color: #56CCB1;
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+}
+.dashboard-layout .dashboard-support .title{
+    width: 20%;
+    float: left;
+    padding-left: 20px;
+    display: flex;
+}
+.dashboard-layout .dashboard-support h5{
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.dashboard-layout .dashboard-support .support-content{
+    width: 80%;
+    height: 100%;
+    float: right;
+}
+
+.dashboard-layout .dashboard-support .support-control{
+    width: 50%;
+    float: right;
+    display:flex;
+}
+.dashboard-layout .search{
+    padding: 5px;
+    display:flex;
+}
+
+.dashboard-layout .search .search-icon{
+    padding-top: 5px;
+}
+.dashboard-layout .search .icon{
+    width: 60%;
+    height: 60%;
+}
+.dashboard-layout h6{
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.dashboard-layout .delivery{
+    padding: 5px;
+    display:flex;
+}
+
+.dashboard-layout .dashboard-body{
+    background-color: rgb(65, 177, 31);
+    width: 100%;
+    height: 83vh;
+}
+
+.dashboard-layout .dashboard-footer{
+    background-color: #56CCB1;
+    width: 100%;
+    height: 48px;
+}
