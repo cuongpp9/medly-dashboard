@@ -125,10 +125,10 @@
     display: table;
   }
   .cicle{
-    height: 30px;
+    height: 80px;
   }
   .medly{
-    height: 15px;
+    height: 25px;
   }
   .info{
     text-align: center;
@@ -168,7 +168,7 @@
   height: 100%;
   padding: 0%;
   padding-right: 10%;
-  border: 1px solid #ddd;
+  border: 0px solid #ddd;
 }
 .title-login {
   text-align: center;

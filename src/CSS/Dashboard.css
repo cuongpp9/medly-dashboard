@@ -61,17 +61,21 @@
     float: right;
 }
 
+.dashboard-layout .menu-control{
+    overflow-y: auto;
+    height: 550px;
+}
 .dashboard-layout .collapsible{
     font-size: 13px;
 }
 .dashboard-layout .collapsible .menu-deliver{
-    padding-left: 70px;
-}
-.dashboard-layout .collapsible .menu-transfers{
     padding-left: 50px;
 }
+.dashboard-layout .collapsible .menu-transfers{
+    padding-left: 33px;
+}
 .dashboard-layout .collapsible .menu-Patients{
-    padding-left: 78px;
+    padding-left: 60px;
 }
 
 .dashboard-layout .dashboard-content .dashboard-support{
@@ -109,12 +113,13 @@
 }
 
 .dashboard-layout .search .search-icon{
-    padding-top: 5px;
+    padding-top: 10px;
+    padding-right: 10px;
 }
 
 .dashboard-layout .search .icon{
-    width: 60%;
-    height: 60%;
+    width: 25px;
+    height: 25px;
 }
 .dashboard-layout h6{
     font-size: 18px;

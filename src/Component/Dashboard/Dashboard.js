@@ -3,6 +3,21 @@ import '../../CSS/Dashboard.css';
 // import { CollapsibleItem, Collapsible, Collection, CollectionItem, Icon } from 'react-materialize';
 
 class Dashboard extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+          toggleIcon: false,
+          key: 0,
+        }
+      }
+
+      handleOnChange (number){
+        this.setState({
+            toggleIcon : !this.state.toggleIcon,
+            key: number
+        });
+    }
+
     render() {
         return (
             <div className="dashboard-layout">
@@ -31,13 +46,31 @@ class Dashboard extends Component {
                                 <div className="collapsible-header"><i className="material-icons">dashboard</i>Dashboard</div>
                             </li>
                             <li>
-                                <div className="collapsible-header">
+                                <div className="collapsible-header" onClick={()=>this.handleOnChange(1)}>
                                     <i className="material-icons">directions_car</i>
                                     Deliveries
-                                <i className="material-icons menu-deliver">keyboard_arrow_right</i>
+                                <i className="material-icons menu-deliver">
+                                {this.state.toggleIcon === true && this.state.key ===1?
+                                     'keyboard_arrow_down':'keyboard_arrow_right'}</i>
                                 </div>
                                 <div className="collapsible-body"><div className="collapsible-header">
-                                    <i className="material-icons">filter_frames</i>Item
+                                    <i className="material-icons">filter_frames</i>Item 1
+                                </div>
+                                </div>
+                                <div className="collapsible-body"><div className="collapsible-header">
+                                    <i className="material-icons">filter_frames</i>Item 2
+                                </div>
+                                </div>
+                                <div className="collapsible-body"><div className="collapsible-header">
+                                    <i className="material-icons">filter_frames</i>Item 3
+                                </div>
+                                </div>
+                                <div className="collapsible-body"><div className="collapsible-header">
+                                    <i className="material-icons">filter_frames</i>Item 4
+                                </div>
+                                </div>
+                                <div className="collapsible-body"><div className="collapsible-header">
+                                    <i className="material-icons">filter_frames</i>Item 5
                                 </div>
                                 </div>
                             </li>
@@ -45,10 +78,11 @@ class Dashboard extends Component {
                                 <div className="collapsible-header"><i className="material-icons">laptop_mac</i>Micro Marchant</div>
                             </li>
                             <li>
-                                <div className="collapsible-header">
+                                <div className="collapsible-header" onClick={()=>this.handleOnChange(2)}>
                                     <i className="material-icons">swap_horiz</i>
                                     Rx Transfers
-                                <i className="material-icons menu-transfers">keyboard_arrow_right</i>
+                                <i className="material-icons menu-transfers">{this.state.toggleIcon === true && this.state.key ===2?
+                                     'keyboard_arrow_down':'keyboard_arrow_right'}</i>
                                 </div>
                                 <div className="collapsible-body"><div className="collapsible-header">
                                     <i className="material-icons">filter_frames</i>Item
@@ -56,10 +90,11 @@ class Dashboard extends Component {
                                 </div>
                             </li>
                             <li>
-                                <div className="collapsible-header">
+                                <div className="collapsible-header" onClick={()=>this.handleOnChange(3)}>
                                     <i className="material-icons">face</i>
                                     Patients
-                                <i className="material-icons menu-Patients">keyboard_arrow_right</i>
+                                <i className="material-icons menu-Patients">{this.state.toggleIcon === true && this.state.key ===3?
+                                     'keyboard_arrow_down':'keyboard_arrow_right'}</i>
                                 </div>
                                 <div className="collapsible-body"><div className="collapsible-header">
                                     <i className="material-icons">filter_frames</i>Item
@@ -107,7 +142,7 @@ class Dashboard extends Component {
                             <div className="support-control">
                                 <div className="search">
                                     <div className="search-icon">
-                                    <i class="material-icons">search</i> &nbsp;
+                                    <img className="icon" src="/assets/ico-search.png" alt="logo"/>
                                     </div>
                                     <div className="search-title">
                                         <h6 className="white-text">Search</h6>
