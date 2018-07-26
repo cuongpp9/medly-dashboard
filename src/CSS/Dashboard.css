@@ -1,14 +1,19 @@
 .dashboard-layout .control{
-    background-color: #56CCB1;
     width: 15%;
     height: 100vh;
     float: left;
+    border: 1px solid #ddd;
 }
 .dashboard-layout .control .profile{
     background-color: rgb(255, 255, 255);
     width: 100%;
-    height: 13vh;
+    height: 15vh;
     display: flex;
+    border: 1px solid #ddd;
+}
+*{
+    margin: 0px;
+    padding: 0px;
 }
 
 .dashboard-layout .control .profile .profile-icon{
@@ -45,12 +50,28 @@
     line-height: 10%;
 }
 
+.dashboard-layout .right{
+    padding-left: 40px;
+}
+
 /*------------------------------------------ */
 .dashboard-layout .dashboard-content{
-    background-color: rgb(204, 86, 135);
     width: 85%;
     height: 100vh;
     float: right;
+}
+
+.dashboard-layout .collapsible{
+    font-size: 13px;
+}
+.dashboard-layout .collapsible .menu-deliver{
+    padding-left: 70px;
+}
+.dashboard-layout .collapsible .menu-transfers{
+    padding-left: 50px;
+}
+.dashboard-layout .collapsible .menu-Patients{
+    padding-left: 78px;
 }
 
 .dashboard-layout .dashboard-content .dashboard-support{
@@ -58,6 +79,7 @@
     width: 100%;
     height: 50px;
     padding-left: 10px;
+    border: 1px solid #ddd;
 }
 .dashboard-layout .dashboard-support .title{
     width: 20%;
@@ -89,6 +111,7 @@
 .dashboard-layout .search .search-icon{
     padding-top: 5px;
 }
+
 .dashboard-layout .search .icon{
     width: 60%;
     height: 60%;
@@ -104,13 +127,30 @@
 }
 
 .dashboard-layout .dashboard-body{
-    background-color: rgb(65, 177, 31);
     width: 100%;
-    height: 83vh;
+    height: 86vh;
 }
 
 .dashboard-layout .dashboard-footer{
     background-color: #56CCB1;
     width: 100%;
-    height: 48px;
+    height: 43px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+.dashboard-layout .dashboard-footer .copy-right-content{
+    color: white;
+    width: 50%;
+    height: 30px;
+    font-size: 15px;
+    float: left;
+    padding-left: 20px;
+}
+.dashboard-layout .dashboard-footer .contact{
+    color: white;
+    width: 15%;
+    height: 30px;
+    font-size: 15px;
+    float: right;
+    padding-left: 20px;
 }

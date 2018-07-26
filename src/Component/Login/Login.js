@@ -5,7 +5,6 @@ class Login extends Component {
   render() {
     return (
       <div className="login-layout">
-
         {/* Left Login layout */}
         <div className="left-layout">
           <div className="get-out">
@@ -20,13 +19,12 @@ class Login extends Component {
             </div>
           </div>
         </div>
-
         {/* rifht Login layout */}
         <div className="login-form">
           <div className="get-out">
             <div className="right-mid">
               <div className="container-login">
-                <div className="card-panel">
+                <div className="card-container">
                   <div className="title-login">
                     <h3>LOGIN</h3>
                   </div>
@@ -46,17 +44,15 @@ class Login extends Component {
                       </div>
                     </form>
                   </div>
-                  <div class="card-action">
-                  <a class="waves-effect waves-light btn">Submit</a>
-                  <a href="#" className="right text-lighten">FORGOT PASSWORD </a>
+                  <div className="card-action">
+                  <a className="waves-effect waves-light btn" href="Dashboard">Submit</a>
+                  <a href="" className="right text-lighten">FORGOT PASSWORD </a>
         </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-
         <div className="copy-right">
           <h5 className="center-align">© 2017 Lindenwood Health, Inc</h5>
         </div>

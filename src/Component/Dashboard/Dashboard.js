@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../../CSS/Dashboard.css';
+// import { CollapsibleItem, Collapsible, Collection, CollectionItem, Icon } from 'react-materialize';
 
 class Dashboard extends Component {
     render() {
@@ -14,15 +15,85 @@ class Dashboard extends Component {
                         </div>
                         <div className="user-info">
                             <div className="user-name">
-                                <h6 className="user-name-content">Darth Vader</h6>
+                                <span className="user-name-content">Darth Vader</span>
                             </div>
                             <div className="mail">
-                                <h6 className="mail-content">cuongpp000000@gmail.com</h6>
+                                <span className="mail-content">cuongpp000000@gmail.com</span>
                             </div>
                             <div className="role">
-                                <h6 className="role-content">(Admin)</h6>
+                                <span className="role-content">(Admin)</span>
                             </div>
                         </div>
+                    </div>
+                    <div className="menu-control">
+                        <ul className="collapsible">
+                            <li>
+                                <div className="collapsible-header"><i className="material-icons">dashboard</i>Dashboard</div>
+                            </li>
+                            <li>
+                                <div className="collapsible-header">
+                                    <i className="material-icons">directions_car</i>
+                                    Deliveries
+                                <i className="material-icons menu-deliver">keyboard_arrow_right</i>
+                                </div>
+                                <div className="collapsible-body"><div className="collapsible-header">
+                                    <i className="material-icons">filter_frames</i>Item
+                                </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div className="collapsible-header"><i className="material-icons">laptop_mac</i>Micro Marchant</div>
+                            </li>
+                            <li>
+                                <div className="collapsible-header">
+                                    <i className="material-icons">swap_horiz</i>
+                                    Rx Transfers
+                                <i className="material-icons menu-transfers">keyboard_arrow_right</i>
+                                </div>
+                                <div className="collapsible-body"><div className="collapsible-header">
+                                    <i className="material-icons">filter_frames</i>Item
+                                </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div className="collapsible-header">
+                                    <i className="material-icons">face</i>
+                                    Patients
+                                <i className="material-icons menu-Patients">keyboard_arrow_right</i>
+                                </div>
+                                <div className="collapsible-body"><div className="collapsible-header">
+                                    <i className="material-icons">filter_frames</i>Item
+                                </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div className="collapsible-header"><i className="material-icons">local_drink</i>Medications</div>
+                            </li>
+                            <li>
+                                <div className="collapsible-header"><i className="material-icons">business</i>Pharmacies</div>
+                            </li>
+                            <li>
+                                <div className="collapsible-header"><i className="material-icons">view_list</i>Sig Codes</div>
+                            </li>
+                            <li>
+                                <div className="collapsible-header"><i className="material-icons">notifications</i>Alerts</div>
+                            </li>
+                            <li>
+                                <div className="collapsible-header"><i className="material-icons">verified_user</i>Prior Authorization</div>
+                            </li>
+                            <li>
+                                <div className="collapsible-header"><i className="material-icons">people</i>User Signups</div>
+                            </li>
+                            <li>
+                                <div className="collapsible-header"><i className="material-icons">people_outline</i>Users and Roles</div>
+                            </li>
+                            <li>
+                                <div className="collapsible-header"><i className="material-icons">settings</i>Setting</div>
+                            </li>
+                            <li>
+                                <div className="collapsible-header"><i className="material-icons">highlight_off</i>Logout</div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div className="dashboard-content">
@@ -36,7 +107,7 @@ class Dashboard extends Component {
                             <div className="support-control">
                                 <div className="search">
                                     <div className="search-icon">
-                                        <img className="icon" alt="icon" src="/assets/ico-search.png" />&nbsp;
+                                    <i class="material-icons">search</i> &nbsp;
                                     </div>
                                     <div className="search-title">
                                         <h6 className="white-text">Search</h6>
@@ -58,8 +129,11 @@ class Dashboard extends Component {
                     <div className="dashboard-body">
                     </div>
                     <div className="dashboard-footer">
-                        <div className="asdasdt">
-                            <h6 className="white-text">Dashboard</h6>
+                        <div className="copy-right">
+                            <span className="copy-right-content">© 2017 Lindenwood Health, Inc</span>
+                        </div>
+                        <div className="contact">
+                            <span className="contact-content">Contact Support</span>
                         </div>
                     </div>
                 </div>
