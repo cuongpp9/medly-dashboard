@@ -1,19 +1,20 @@
 .dashboard-layout .control{
-    width: 15%;
+    width: 16%;
     height: 100vh;
     float: left;
     border: 1px solid #ddd;
 }
+
+.sideNav{
+    display: none;
+}
+
 .dashboard-layout .control .profile{
     background-color: rgb(255, 255, 255);
     width: 100%;
-    height: 15vh;
+    height: 111px;
     display: flex;
     border: 1px solid #ddd;
-}
-*{
-    margin: 0px;
-    padding: 0px;
 }
 
 .dashboard-layout .control .profile .profile-icon{
@@ -56,7 +57,7 @@
 
 /*------------------------------------------ */
 .dashboard-layout .dashboard-content{
-    width: 85%;
+    width: 84%;
     height: 100vh;
     float: right;
 }
@@ -113,17 +114,17 @@
 }
 
 .dashboard-layout .search .search-icon{
-    padding-top: 10px;
-    padding-right: 10px;
+    padding-top: 5px;
+    padding-right: 5px;
 }
 
 .dashboard-layout .search .icon{
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
 }
 .dashboard-layout h6{
     font-size: 18px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Calibri;
 }
 
 .dashboard-layout .delivery{
@@ -159,3 +160,83 @@
     float: right;
     padding-left: 20px;
 }
+
+
+/*-------------%%%%$$$$$$--- Responsive---------------------------- */
+
+@media only screen and (max-width: 600px) {
+    .onDisplay{
+        display: none;
+        width: 10px;
+        height: 10px;
+    }
+    .sideNav{
+        display: table-row;
+        width: 5px;
+    }
+
+    .dashboard-layout .dashboard-support{
+        background-color: #56CCB1;
+        width: 120px;
+        height: 10px;
+        padding-left: 1px;
+        border: 1px solid #ddd;
+    }
+
+    .bntSideNav{
+        width: 90px;
+        height: 48px;
+        background: #56CCB1;
+    }
+    .material-icons{
+        padding: 10px;
+    }
+
+    /*------------------------------------------ */
+
+    .dashboard-layout .menu-control{
+        overflow-y: auto;
+        height: 550px;
+    }
+    .dashboard-layout .collapsible{
+        color: black;
+    }
+
+    
+    .dashboard-layout .dashboard-content .dashboard-support{
+        background-color: #56CCB1;
+        width: 100%;
+        height: 50px;
+        padding-left: 0px;
+        border: 1px solid #ddd;
+    }
+    .dashboard-layout .dashboard-support .title{
+        width: 20%;
+        float: left;
+        padding-left: 0px;
+        display: flex;
+    }
+    .dashboard-layout .dashboard-support h5{
+        text-transform: uppercase;
+        font-family: Calibri;
+        font-size: 15px;
+    }
+    
+    .dashboard-layout .search .search-icon{
+        padding-top: 0px;
+        padding-right: 0px;
+    }
+    
+    .dashboard-layout .delivery{
+        padding: 5px;
+        display:flex;
+    }
+    
+    .dashboard-layout .dashboard-footer{
+        background-color: #56CCB1;
+        width: 100%;
+        height: 43px;
+        border: 1px solid #ddd;
+        padding: 10px;
+    }
+  }

@@ -103,7 +103,7 @@
 
   /*-------------%%%%$$$$$$--- Responsive---------------------------- */
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 600px) {
   .login-layout .left-layout{
     background-color: #56CCB1;
     background-image: url("/assets/bg-medly.png");

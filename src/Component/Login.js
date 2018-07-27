@@ -1,7 +1,35 @@
 import React, { Component } from 'react';
-import '../../CSS/Login.css';
+import '../CSS/Login.css';
 
 class Login extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      userName: '',
+      password: '',
+      pathDashboard: '',
+    }
+  }
+
+  onHandleChange =(event) => {
+    var target = event.target;
+    var name = target.name;
+    var value = target.value;
+    this.setState({
+      [name]: value,
+    });
+    console.log(this.state);
+  }
+
+  onHandleSubmit = (event) => {
+    if(this.setState.userName === 'admin@123' && this.state.password === 'admin'){
+      this.setState({
+        pathDashboard: '/Dashboard',
+      });
+      console.log(event.target.value);
+    }
+  }
+
   render() {
     return (
       <div className="login-layout">
@@ -20,7 +48,7 @@ class Login extends Component {
           </div>
         </div>
         {/* rifht Login layout */}
-        <div className="login-form">
+        <div className="login-form" >
           <div className="get-out">
             <div className="right-mid">
               <div className="container-login">
@@ -32,20 +60,20 @@ class Login extends Component {
                     <form className="col s12">
                       <div className="row">
                         <div className="input-field col s12">
-                          <input id="email" type="email" className="validate" />
+                          <input name="userName" type="email" className="validate"  onChange={this.onHandleChange}/>
                           <label>Email</label>
                         </div>
                       </div>
                       <div className="row">
                         <div className="input-field col s12">
-                          <input id="password" type="password" className="validate" />
+                          <input name="password" type="password" className="validate" onChange={this.onHandleChange}/>
                           <label>Password</label>
                         </div>
                       </div>
                     </form>
                   </div>
                   <div className="card-action">
-                  <a className="waves-effect waves-light btn" href="Dashboard">Submit</a>
+                  <a className="waves-effect waves-light btn" onSubmit ={this.onHandleSubmit} href='/Dashboard'>Submit</a>
                   <a href="" className="right text-lighten">FORGOT PASSWORD </a>
         </div>
                 </div>
