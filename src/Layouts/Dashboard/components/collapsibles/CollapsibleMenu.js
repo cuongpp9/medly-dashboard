@@ -4,9 +4,6 @@ import CollapsibleBody from './CollapsibleBody';
 import './CollapsibleMenu.scss';
 
 class CollapsibleMenu extends Component {
-  constructor(props) {
-    super(props);
-  }
   state = {
     toggleDeliveries: false,
     toggleTransfers: false,
