@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import '../../CSS/Dashboard.css';
+import './Dashboard.scss';
 import { SideNavItem, SideNav, Button } from 'react-materialize';
-import CollapsibleMenu from './CollapsibleMenu';
+import CollapsibleMenu from './components/collapsibles/CollapsibleMenu';
 class Dashboard extends Component {
     render() {
         return (
@@ -36,8 +36,10 @@ class Dashboard extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="menu-control">
-                            <CollapsibleMenu />
+                        <div className="menu">
+                            <div className="menu-control">
+                                <CollapsibleMenu />
+                            </div>
                         </div>
                     </div>
                 </div>
