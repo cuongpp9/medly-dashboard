@@ -6,12 +6,12 @@ import './CollapsibleMenu.scss';
 class CollapsibleMenu extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      toggleDeliveries: false,
-      toggleTransfers: false,
-      togglePatints: false,
-      key: 0,
-    }
+  }
+  state = {
+    toggleDeliveries: false,
+    toggleTransfers: false,
+    togglePatints: false,
+    key: 0,
   }
   handleOnChange(number) {
     switch(number) {
