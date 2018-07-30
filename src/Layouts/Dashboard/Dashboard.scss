@@ -13,7 +13,7 @@
         .profile{
             background-color: rgb(255, 255, 255);
             width: 100%;
-            height: 111px;
+            height: 10%;
             display: flex;
             border: 1px solid #ddd;
             
@@ -74,7 +74,7 @@
         .dashboard-support{
             background-color: #56CCB1;
             width: 100%;
-            height: 50px;
+            height: 8vh;
             padding-left: 10px;
             border: 1px solid #ddd;
             
@@ -128,12 +128,12 @@
         }
         .dashboard-body{
             width: 100%;
-            height: 86vh;
+            height: 84vh;
         }
         .dashboard-footer{
             background-color: #56CCB1;
             width: 100%;
-            height: 43px;
+            height: 8vh;
             border: 1px solid #ddd;
             padding: 10px;
 
@@ -185,11 +185,20 @@
                 display: none;
                 width: 10px;
                 height: 10px;
+
+                .profile{
+                    background-color: rgb(255, 255, 255);
+                    width: 100%;
+                    height: 10%;
+                    display: flex;
+                    border: 1px solid #ddd;
+                }
                 
                 .menu{
+                    height: 90vh;
                     .menu-control{
                         overflow-y: auto;
-                        height: 550px;
+                        height: 90vh;
                     }
                 }
             }

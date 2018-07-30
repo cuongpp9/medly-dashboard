@@ -54,7 +54,7 @@ class CollapsibleMenu extends Component {
       <div>
         <ul className="collapsible">
         <li onClick={() => this.handleOnChange(0)}>
-          <CollapsibleHeader Title ="Dashboard" iconName="dashboard"/>
+          <CollapsibleHeader Title ="Dashboard" nameIcon="dashboard"/>
         </li>
           <li onClick={() => this.handleOnChange(1)}>
             <div className="collapsible-header">
@@ -64,13 +64,13 @@ class CollapsibleMenu extends Component {
                 {this.state.toggleIcon === true && this.state.key === 1 ?
                   'keyboard_arrow_down' : 'keyboard_arrow_right'}</i>
             </div>
-            <CollapsibleBody nameItem ="Item 1"/>
-            <CollapsibleBody nameItem ="Item 2"/>
-            <CollapsibleBody nameItem ="Item 3"/>
-            <CollapsibleBody nameItem ="Item 4"/>
+            <CollapsibleBody nameItem ="Item 1" nameIcon ="fast_forward"/>
+            <CollapsibleBody nameItem ="Item 2" nameIcon ="fast_forward"/>
+            <CollapsibleBody nameItem ="Item 3" nameIcon ="fast_forward"/>
+            <CollapsibleBody nameItem ="Item 4" nameIcon ="fast_forward"/>
           </li>
           <li onClick={() => this.handleOnChange(0)}>
-            <CollapsibleHeader Title ="Micro Marchant" iconName="laptop_mac"/>
+            <CollapsibleHeader Title ="Micro Marchant" nameIcon="laptop_mac"/>
           </li>
           <li onClick={() => this.handleOnChange(2)}>
             <div className="collapsible-header">
@@ -80,8 +80,8 @@ class CollapsibleMenu extends Component {
                 {this.state.toggleTransfers === true && this.state.key === 2 ?
                   'keyboard_arrow_down' : 'keyboard_arrow_right'}</i>
             </div>
-            <CollapsibleBody nameItem ="Item 1"/>
-            <CollapsibleBody nameItem ="Item 2"/>
+            <CollapsibleBody nameItem ="Item 1" nameIcon ="fast_forward"/>
+            <CollapsibleBody nameItem ="Item 2" nameIcon ="fast_forward"/>
           </li>
           <li onClick={() => this.handleOnChange(3)}>
             <div className="collapsible-header">
@@ -91,35 +91,35 @@ class CollapsibleMenu extends Component {
                 {this.state.togglePatints === true && this.state.key === 3 ?
                   'keyboard_arrow_down' : 'keyboard_arrow_right'}</i>
             </div>
-            <CollapsibleBody nameItem ="Item 1"/>
-            <CollapsibleBody nameItem ="Item 2"/>
+            <CollapsibleBody nameItem ="Item 1" nameIcon ="fast_forward"/>
+            <CollapsibleBody nameItem ="Item 2" nameIcon ="fast_forward"/>
           </li>
           <li onClick={() => this.handleOnChange(0)}>
-            <CollapsibleHeader Title ="Medications" iconName="local_drink"/>
+            <CollapsibleHeader Title ="Medications" nameIcon="local_drink"/>
           </li>
           <li onClick={() => this.handleOnChange(0)}>
-            <CollapsibleHeader Title ="Pharmacies" iconName="business"/>
+            <CollapsibleHeader Title ="Pharmacies" nameIcon="business"/>
           </li>
           <li onClick={() => this.handleOnChange(0)}>
-            <CollapsibleHeader Title ="Sig Codes" iconName="view_list"/>
+            <CollapsibleHeader Title ="Sig Codes" nameIcon="view_list"/>
           </li>
           <li onClick={() => this.handleOnChange(0)}>
-            <CollapsibleHeader Title ="Alerts" iconName="notifications"/>
+            <CollapsibleHeader Title ="Alerts" nameIcon="notifications"/>
           </li>
           <li onClick={() => this.handleOnChange(0)}>
-            <CollapsibleHeader Title ="Prior Authorization" iconName="verified_user"/>
+            <CollapsibleHeader Title ="Prior Authorization" nameIcon="verified_user"/>
           </li>
           <li onClick={() => this.handleOnChange(0)}>
-            <CollapsibleHeader Title ="User Signups" iconName="people"/>
+            <CollapsibleHeader Title ="User Signups" nameIcon="people"/>
           </li>
           <li onClick={() => this.handleOnChange(0)}>
-            <CollapsibleHeader Title ="Users and Roles" iconName="people_outline"/>
+            <CollapsibleHeader Title ="Users and Roles" nameIcon="people_outline"/>
           </li>
           <li onClick={() => this.handleOnChange(0)}>
-            <CollapsibleHeader Title ="Setting" iconName="settings"/>
+            <CollapsibleHeader Title ="Setting" nameIcon="settings"/>
           </li>
           <li onClick={() => this.handleOnChange(0)}>
-            <CollapsibleHeader Title ="Logout" iconName="highlight_off"/>
+            <CollapsibleHeader Title ="Logout" nameIcon="highlight_off"/>
           </li>
         </ul>
       </div>

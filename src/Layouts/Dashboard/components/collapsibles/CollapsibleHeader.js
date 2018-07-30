@@ -5,7 +5,7 @@ class CollapsibleHeader extends Component {
   render() {
     return (
           <div className="collapsible-header">
-            <i className="material-icons">{this.props.iconName}</i>
+            <i className="material-icons">{this.props.nameIcon}</i>
             {this.props.Title}
         </div>
     );
