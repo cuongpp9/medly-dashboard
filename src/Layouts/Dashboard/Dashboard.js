@@ -11,8 +11,8 @@ class Dashboard extends Component {
                         <SideNav
                             trigger={<Button className="bntSideNav">
                                 <i className="material-icons">menu</i></Button>}
-                            options={{ closeOnClick: true }}>
-                            <SideNavItem href=''>
+                            options={{ closeOnClick: false }}>
+                            <SideNavItem>
                                 <CollapsibleMenu />
                             </SideNavItem>
                         </SideNav>
