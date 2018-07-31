@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Dashboard.scss';
 import { SideNavItem, SideNav, Button } from 'react-materialize';
-import CollapsibleMenu from './components/collapsibles/CollapsibleMenu';
+import CollapsibleMenu from './components/CollapsibleMenu';
 class Dashboard extends Component {
     render() {
         return (
@@ -13,7 +13,7 @@ class Dashboard extends Component {
                                 <i className="material-icons">menu</i></Button>}
                             options={{ closeOnClick: false }}>
                             <SideNavItem>
-                                <CollapsibleMenu />
+                                <CollapsibleMenu/>
                             </SideNavItem>
                         </SideNav>
                     </div>

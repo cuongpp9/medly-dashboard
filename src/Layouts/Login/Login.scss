@@ -6,28 +6,26 @@
     width: 50%;
     height: 100vh;
     float: left;
-    .get-out{
-      display: table;
-      position: absolute;
-      height: 100%;
-      width: 50%;
-    }
-    .leftmid{
-      display: table-cell;
-      vertical-align: middle;
-      .center-align {
-        .cicle{
-          height: 120px;
-        }
-        .medly{
-          height: 28px;
-        }
-      }
-      .info{
-        text-align: center;
-        color: white;
-      }
-    }
+  }
+  .get-out{
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+  }
+  .leftmid{
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .cicle{
+    height: 120px;
+  }
+  .medly{
+    height: 28px;
+  }
+  .info{
+    text-align: center;
+    color: white;
   }
   .copy-right{
     position: absolute;
@@ -55,25 +53,23 @@
         position: absolute;
         height: 20vh;
         width: 100%;
+      }
+      .leftmid{
+        display: table-cell;
+        vertical-align: middle;
 
-        .leftmid{
-          display: table-cell;
-          vertical-align: middle;
-
-          .center-align{
-            .cicle{
-              height: 80px;
-            }
-            .medly{
-              height: 25px;
-            }
-          }
-          .info{
-            text-align: center;
-            color: white;
-            font-size: 15px;
-          }
+        
+        .info{
+          text-align: center;
+          color: white;
+          font-size: 15px;
         }
+      }
+      .cicle{
+        height: 80px;
+      }
+      .medly{
+        height: 25px;
       }
     }
       

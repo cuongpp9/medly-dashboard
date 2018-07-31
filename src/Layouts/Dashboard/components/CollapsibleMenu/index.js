@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import CollapsibleHeader from './CollapsibleHeader';
-import CollapsibleBody from './CollapsibleBody';
-import './CollapsibleMenu.scss';
+import CollapsibleHeader from '../CollapsibleHeader';
+import CollapsibleBody from '../CollapsibleBody';
+import './stype.scss';
 
 class CollapsibleMenu extends Component {
   state = {
