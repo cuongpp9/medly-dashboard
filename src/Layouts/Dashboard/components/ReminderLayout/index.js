@@ -24,11 +24,14 @@ class TaskReminder extends Component {
         <span>Reminder Pro</span>
       </div>
       <FormControl/>
-      <div className="listItemReminder ">
-        {elmListReminder}
+      <div className="collection">
+        <div className="clolecttionReminder">
+          {elmListReminder}
+        </div>
+        
       </div>
       <div className="btnClearReminder">
-      <button type="submit" className="btn btn-danger mb-2"
+      <button type="submit" className="btn btnClear"
         onClick = {this.clearItemReminder}>Clear Reminder</button>
       </div>
       

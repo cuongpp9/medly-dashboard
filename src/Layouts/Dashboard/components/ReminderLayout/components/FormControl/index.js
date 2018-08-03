@@ -62,7 +62,7 @@ class FormControl extends Component {
     return (
       <div className="Control">
         <form className="form-inline" onSubmit={this.onHandleSubmit}>
-          <div className="form-group mb-2">
+          <div className="form-group mb-6">
             <input className="form-control" type="text"
               placeholder="I have to..."
               name="name"
@@ -79,7 +79,7 @@ class FormControl extends Component {
               required />
           </div>
           <button type="submit"
-            className={this.state.isUpdate === true ? "btn btn-primary mb-2" : "btn btn-success mb-2"}>
+            className={this.state.isUpdate === true ? "btn btn-primary mb-2" : "waves-effect waves-light btn btnAddReminder"}>
             {this.state.isUpdate === true ? 'Update Reminder' : 'Add Reminder'}
           </button>
         </form>

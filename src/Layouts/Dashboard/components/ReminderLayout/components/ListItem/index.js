@@ -16,7 +16,7 @@ class ListItem extends Component {
     render() {
         var {ListReminder} = this.props;
         return (
-            <a className="list-group-item list-group-item-action">
+            <a className="collection-item">
                 <span className="itemReminder" onClick = {this.onEditReminderItem}>{ListReminder.reminderItem}</span>
                 <span className="deleteItem" onClick ={this.onDeleteItem}>&#x2715;</span><br/>
                 <em>{moment(new Date(ListReminder.dueDate)).fromNow()}</em>

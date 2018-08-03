@@ -1,8 +1,12 @@
-.itemReminder{
-    cursor: pointer;
-}
-.deleteItem{
-    float: right;
-    padding-bottom: 10px;
-    cursor: pointer;
+.collection a.collection-item {
+    color: black;
+    padding: 10px;
+
+    .itemReminder{
+        cursor: pointer;
+    }
+    .deleteItem{
+        float: right;
+        cursor: pointer;
+    }
 }
