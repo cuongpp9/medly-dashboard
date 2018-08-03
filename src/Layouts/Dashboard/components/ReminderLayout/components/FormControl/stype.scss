@@ -11,8 +11,11 @@
     .btnAddReminder{
         background-color: #5cb85c;
         border-color: #4cae4c;
+    }
+    .btn, .btn-large, .btn-small {
         text-transform: capitalize;
     }
+
 }
 
 @media only screen and (max-width: 600px) {
