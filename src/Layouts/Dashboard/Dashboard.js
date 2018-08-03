@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Dashboard.scss';
 import { SideNavItem, SideNav, Button } from 'react-materialize';
 import CollapsibleMenu from './components/CollapsibleMenu';
+import TaskReminder from './components/ReminderLayout'
 class Dashboard extends Component {
     render() {
         return (
@@ -75,6 +76,7 @@ class Dashboard extends Component {
                         </div>
                     </div>
                     <div className="dashboard-body">
+                    <TaskReminder/>
                     </div>
                     <div className="dashboard-footer">
                         <div className="copy-right">
