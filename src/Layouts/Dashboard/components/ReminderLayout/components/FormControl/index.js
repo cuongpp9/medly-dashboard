@@ -13,6 +13,10 @@ class FormControl extends Component {
     }
   }
 
+  componentDidMount(){
+    
+  }
+
   //Listener when input text, due time. 
   onHandChange = (event) => {
     var target = event.target;
@@ -37,6 +41,7 @@ class FormControl extends Component {
   //Listener when Receive new props
   componentWillReceiveProps(newProps) {
     if (newProps && newProps.itemReminderOnSelect.id !== null) {
+      this.reminderContent.focus();
       this.setState({
         id: newProps.itemReminderOnSelect.id,
         name: newProps.itemReminderOnSelect.reminderItem,
@@ -68,6 +73,7 @@ class FormControl extends Component {
               name="name"
               value={this.state.name}
               onChange={this.onHandChange}
+              ref={(input) => { this.reminderContent = input}}
               required />
           </div>
           <div className="form-group mx-sm-3 mb-2">
