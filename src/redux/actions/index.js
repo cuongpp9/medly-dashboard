@@ -36,4 +36,22 @@ export const editReminder = (reminderItem) =>{
         type: types.EDIT_REMINDER,
         reminderItem,
     }
+}
+
+//////Action delete all reminder///////////////
+export const authencationReminder = (userName) =>{
+    console.log("vao roi", userName);
+    return {
+        type: types.AUTHENTICATION_REMINDER,
+        userName,
+    }
   }
+
+//////Action delete all reminder///////////////
+export const singupReminder = (userName) =>{
+    console.log("vao roi", userName);
+    return {
+        type: types.SINGUP_REMINDER,
+        userName,
+    }
+}

@@ -7,6 +7,7 @@ var initialState = data? data:[];
 var myReducer = (state = initialState, action) =>{
     var index = -1;
     switch(action.type){
+
         case types.LIST_REMINDER:
             return [...state];
 
