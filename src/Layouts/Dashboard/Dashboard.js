@@ -3,7 +3,14 @@ import './Dashboard.scss';
 import { SideNavItem, SideNav, Button } from 'react-materialize';
 import CollapsibleMenu from './components/CollapsibleMenu';
 import TaskReminder from './components/ReminderLayout'
+import * as actions from './../../redux/actions/AppActionTypes';
+import { connect } from 'react-redux';
+
 class Dashboard extends Component {
+    onLogoutFirebase = () =>{
+        this.props.onSignoutReminder();
+    }
+
     render() {
         return (
             <div className="dashboard-layout">
@@ -72,6 +79,11 @@ class Dashboard extends Component {
                                         <h6 className="white-text">+New Patient</h6>
                                     </div>
                                 </div>
+                                <div className="logout">
+                                    <div className="bnt-logout">
+                                        <a className="waves-effect waves-light red-text text-darken-4" onClick={this.onLogoutFirebase}>Logout</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -91,4 +103,18 @@ class Dashboard extends Component {
         );
     }
 }
-export default Dashboard;
+
+const mapStateToProps = (state) => {
+    return {
+    }
+  }
+const mapDispatchToProps = (dispatch, props) => {
+    return {
+      onSignoutReminder: () => {
+        dispatch(actions.signoutReminder());
+      }
+    }
+}
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(Dashboard);

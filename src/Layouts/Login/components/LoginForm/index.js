@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './stype.scss';
-import * as actions from './../../../../redux/actions';
+import * as actions from './../../../../redux/actions/AppActionTypes';
 import { connect } from 'react-redux';
-import firebaseConnect from './../../../../firebaseConnect';
 
 
 class LoginForm extends Component {
@@ -15,7 +14,7 @@ class LoginForm extends Component {
         };
       }
 
-    //Listener when input text, due time. 
+    //Listener when input mail, pass. 
     onHandChange = (event) => {
         var target = event.target;
         var name = target.name;
@@ -23,34 +22,19 @@ class LoginForm extends Component {
         this.setState({
         [name]: value
         });
-        //console.log(value);
     }
 
-      //save state submit form.
     onHandleSubmit = (event) => {
-        //console.log("check State:",this.state);
         event.preventDefault();
         this.props.onCheckAuthentication(this.state)
-        // firebaseConnect.auth().createUserWithEmailAndPassword(this.state.email, 
-        //     this.state.password).then((u)=>{
-        // }).then((u)=>{console.log(u)})
-        // .catch((error) => {
-        //     console.log(error);
-        // });
         console.log(this.state);
     }
 
     onHandleSingup = (event) =>{
         console.log(this.state.email);
         event.preventDefault();
-        // firebaseConnect.auth().createUserWithEmailAndPassword(this.state.email, this.state.password).then((u)=>{
-        // }).then((u)=>{console.log(u)})
-        // .catch((error) => {
-        //     console.log(error);
-        // })
-        this.props.onSingupReminder(this.state)
+        this.props.onSignupReminder(this.state)
     }
-
 
     render() {
         return (
@@ -66,7 +50,7 @@ class LoginForm extends Component {
                                     <form className="col s12"  onSubmit={this.onHandleSubmit}>
                                         <div className="row">
                                             <div className="input-field col s12">
-                                                <input name="userName" type="email" className="validate" 
+                                                <input type="email" className="validate" 
                                                 value={this.state.email}
                                                 name = 'email'
                                                 onChange={this.onHandChange}/>
@@ -75,7 +59,7 @@ class LoginForm extends Component {
                                         </div>
                                         <div className="row">
                                             <div className="input-field col s12">
-                                                <input name="password" type="password" className="validate"
+                                                <input type="password" className="validate"
                                                 name = 'password' 
                                                 value={this.state.password} onChange={this.onHandChange}/>
                                                 <label>Password</label>
@@ -102,15 +86,15 @@ const mapStateToProps = (state) => {
     return {
     }
   }
-  const mapDispatchToProps = (dispatch, props) => {
+const mapDispatchToProps = (dispatch, props) => {
     return {
       onCheckAuthentication: (userName) => {
         dispatch(actions.authencationReminder(userName));
       },
-      onSingupReminder: (userName) => {
-        dispatch(actions.singupReminder(userName));
+      onSignupReminder: (userName) => {
+        dispatch(actions.signupReminder(userName));
       }
     }
-  }
+}
 
 export default connect(mapStateToProps, mapDispatchToProps) (LoginForm);

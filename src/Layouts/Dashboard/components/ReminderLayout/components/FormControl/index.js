@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import * as actions from './../../../../../../redux/actions';
+import * as actions from './../../../../../../redux/actions/AppActionTypes';
 import { connect } from 'react-redux';
 import './stype.scss';
 
@@ -11,10 +11,6 @@ class FormControl extends Component {
       dueDate: '',
       isUpdate: false
     }
-  }
-
-  componentDidMount(){
-    
   }
 
   //Listener when input text, due time. 

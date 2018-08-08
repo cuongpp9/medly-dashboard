@@ -4,7 +4,7 @@ import * as utility from '../utility';
 var data = JSON.parse(localStorage.getItem('TastReminder'));
 var initialState = data? data:[];
 
-var myReducer = (state = initialState, action) =>{
+export default (state = initialState, action) =>{
     var index = -1;
     switch(action.type){
 
@@ -64,5 +64,3 @@ var myReducer = (state = initialState, action) =>{
         default: return state;
     }
 };
-
-export default myReducer;

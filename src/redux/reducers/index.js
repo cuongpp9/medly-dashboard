@@ -3,8 +3,8 @@ import TastReminders from './TastReminders';
 import editReminder from './editReminder';
 import authentication from './authentication';
 
-const myReducer = combineReducers({
+const reducerReminder = combineReducers({
     TastReminders, editReminder, authentication
 });
 
-export default myReducer;
+export default reducerReminder;

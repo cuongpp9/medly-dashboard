@@ -3,7 +3,7 @@ import './App.css';
 import Dashboard from './Layouts/Dashboard/Dashboard'
 import Login from './Layouts/Login/Login';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import firebaseConnect from './firebaseConnect';
+import firebaseConnect from './config/firebaseConnect';
 
 
 class App extends Component {

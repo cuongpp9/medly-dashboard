@@ -6,7 +6,7 @@ var initialState = {
     password: ''
 }; 
 
-var myReducer = (state = initialState, action) =>{
+export default (state = initialState, action) =>{
     switch(action.type){
         case types.AUTHENTICATION_REMINDER:
             console.log("Kiem tra Action:",action.userName.email);
@@ -15,14 +15,17 @@ var myReducer = (state = initialState, action) =>{
             }
             return [...state];
 
-        case types.SINGUP_REMINDER:
+        case types.SIGNUP_REMINDER:
             console.log("Kiem tra Action:",action.userName.email);
             if(action.userName.email !==null && action.userName.password !==null){
                 utility.singupFireBaseReminder(action.userName.email, action.userName.password)
             }
             return [...state];
+
+        case types.SIGNOUT_REMINDER:
+            console.log("Kiem tra Action:",action);
+            utility.singoutFireBaseReminder();
+            return [...state];
         default: return state;
     }
 };
-
-export default myReducer;

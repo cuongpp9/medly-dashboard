@@ -1,5 +1,5 @@
 import randomstring from 'randomstring';
-import firebaseConnect from './../../firebaseConnect';
+import firebaseConnect from './../../config/firebaseConnect';
 
 export const randomIDReminder = ()=>{
     const randomID = "0802-Terralogic-" + randomstring.generate();
@@ -15,7 +15,6 @@ export const findIDReminder = (listReminder, id) =>{
     });
     return idEditReminder;
 }
-
 
 export const checkAuthentication = (email, password) =>{
     firebaseConnect.auth().signInWithEmailAndPassword(email, 
@@ -43,4 +42,8 @@ export const singupFireBaseReminder = (email, password) =>{
             return false;
     });
     return false;
+}
+
+export const singoutFireBaseReminder = () =>{
+    firebaseConnect.auth().signOut();
 }

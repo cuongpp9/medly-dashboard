@@ -2,17 +2,17 @@ import React, { Component } from 'react';
 import moment from 'moment';
 import { connect } from 'react-redux';
 import './stype.scss';
-import * as actions from './../../../../../../redux/actions';
+import actions from './../../../../../../redux/actions';
 import Countdown from "react-countdown-now";
+import { bindActionCreators } from 'redux'
 
 class ListItem extends Component {
 
     onDeleteItem = () => {
-        this.props.onDeleteReminder(this.props.ListReminder.id);
+        this.props.actions.deleteReminder(this.props.ListReminder.id);
     }
     onEditReminderItem = () => {
-        //console.log("item:",this.props.ListReminder)
-        this.props.onEditReminder(this.props.ListReminder);
+        this.props.actions.editReminder(this.props.ListReminder);
     }
     onShowReminderIsDone = () => <span>Reminder is done!</span>;
     render() {
@@ -37,12 +37,7 @@ const mapStateToProps = (state) => {
 }
 const mapDispatchToProps = (dispatch, props) => {
     return {
-        onDeleteReminder: (id) => {
-            dispatch(actions.deleteReminder(id));
-        },
-        onEditReminder: (reminderItem) => {
-            dispatch(actions.editReminder(reminderItem));
-        }
+        actions : bindActionCreators({ ...actions.AppActionTypes }, dispatch)
     }
 }
 

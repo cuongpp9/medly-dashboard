@@ -3,7 +3,7 @@ import './stype.scss';
 import FormControl from './components/FormControl/';
 import ListItem from './components/ListItem/';
 import {connect} from 'react-redux';
-import * as actions from './../../../../redux/actions/index';
+import * as actions from './../../../../redux/actions/AppActionTypes';
 import moment from 'moment';
 import {toast,ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';

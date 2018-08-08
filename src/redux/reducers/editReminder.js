@@ -6,7 +6,7 @@ var initialState = {
     dueDate:''
 }; 
 
-var myReducer = (state = initialState, action) =>{
+export default (state = initialState, action) =>{
     switch(action.type){
         case types.EDIT_REMINDER:
         //console.log("action edit reminder:", action);
@@ -14,5 +14,3 @@ var myReducer = (state = initialState, action) =>{
         default: return state;
     }
 };
-
-export default myReducer;
